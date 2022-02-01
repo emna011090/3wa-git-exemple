@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js</title>
+    <script src="https://unpkg.com/vue@3.2.29"></script>
+</head>
+<body>
+    <div id="app">
+      
+        <p>Visiter le site Vue.js</p>
+        <a v-bind:href="url">here</a>
+        
+    </div>
+<script>
+    const app = Vue.createApp({
+        data(){
+            return{
+           
+                url: 'https://v3.vuejs.org/'
+            }
+        }
+    }).mount('#app');
+</script>
+
+
+
+
+    
+</body>
+</html>
